@@ -155,9 +155,11 @@ html_theme = 'press'  # press 主题
 
 `make html`
 
+(下面这张图使用, **英文,相对路径, 以及斜杠，而不是反斜杠**，不然make html的时候，这个md文件的图片不能找到。)：
 
+`![](./demo/images/image-20220514150556939.png)`
 
-![image-20220514150556939](.\搭建在线个人文档\images\image-20220514150556939.png)
+![](./demo/images/image-20220514150556939.png)
 
 ## 5. 配置markdown
 
@@ -257,15 +259,15 @@ Indices and tables
 
 We're only showing public repositories. For private projects and other features, please use [Read the Docs for Business](https://readthedocs.com/).
 
-所以最好是Public 仓库，如果是私有仓库，那得￥￥￥￥￥![image-20220514154350091](.\搭建在线个人文档\images\image-20220514154350091.png)
+所以最好是Public 仓库，如果是私有仓库，那得￥￥￥￥￥![image-20220514154350091](./demo/images/image-20220514154350091.png)
 
 点击下一页
 
-![image-20220514154455019](.\搭建在线个人文档\images\image-20220514154455019.png)
+![image-20220514154455019](./demo/images/image-20220514154455019.png)
 
 之后点击完成， 最后构建版本
 
-![image-20220514154616136](.\搭建在线个人文档\images\image-20220514154616136.png)
+![image-20220514154616136](./demo/images/image-20220514154616136.png)
 
 参考文档：
 
