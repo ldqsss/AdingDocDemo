@@ -60,7 +60,7 @@ exclude_patterns = []
 # html_theme = 'alabaster'  # 默认主题
 
 #import sphinx_rtd_theme  # 导入刚刚下载的库
-#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # html_theme = 'sphinx_rtd_theme'
 html_theme = 'press'
 # Add any paths that contain custom static files (such as style sheets) here,
