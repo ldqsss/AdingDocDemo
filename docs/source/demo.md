@@ -2,14 +2,14 @@
 
 # 准备条件
 
-1**、`github`账号**
-使用[github](https://github.com/)对文档进行版本管理
+1.   **`github`账号**
+     使用[github](https://github.com/)对文档进行版本管理
 
-2**、注册`Read the Docs`账号**
-官网地址：https://readthedocs.org/
+2.   **注册`Read the Docs`账号**
+     官网地址：https://readthedocs.org/
 
-3**、安装Python**
-[Sphinx](https://www.sphinx.org.cn/)是一个python工具，用于生成文档，所以需要安装Python环境。
+3.   **安装Python**
+     [Sphinx](https://www.sphinx.org.cn/)是一个python工具，用于生成文档，所以需要安装Python环境。
 
 # 开始装了
 
@@ -157,7 +157,7 @@ html_theme = 'press'  # press 主题
 
 
 
-![image-20220514150556939](C:\Users\mild\Documents\my_md_files\jobHunting\搭建在线个人文档\images\image-20220514150556939.png)
+![image-20220514150556939](.\搭建在线个人文档\images\image-20220514150556939.png)
 
 ## 5. 配置markdown
 
@@ -257,15 +257,15 @@ Indices and tables
 
 We're only showing public repositories. For private projects and other features, please use [Read the Docs for Business](https://readthedocs.com/).
 
-所以最好是Public 仓库，如果是私有仓库，那得￥￥￥￥￥![image-20220514154350091](C:\Users\mild\Documents\my_md_files\jobHunting\搭建在线个人文档\images\image-20220514154350091.png)
+所以最好是Public 仓库，如果是私有仓库，那得￥￥￥￥￥![image-20220514154350091](.\搭建在线个人文档\images\image-20220514154350091.png)
 
 点击下一页
 
-![image-20220514154455019](C:\Users\mild\Documents\my_md_files\jobHunting\搭建在线个人文档\images\image-20220514154455019.png)
+![image-20220514154455019](.\搭建在线个人文档\images\image-20220514154455019.png)
 
 之后点击完成， 最后构建版本
 
-![image-20220514154616136](C:\Users\mild\Documents\my_md_files\jobHunting\搭建在线个人文档\images\image-20220514154616136.png)
+![image-20220514154616136](.\搭建在线个人文档\images\image-20220514154616136.png)
 
 参考文档：
 
