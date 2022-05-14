@@ -1,18 +1,14 @@
-# 搭建在线电子书：Sphinx + Github + ReadTheDocs ](https://www.cnblogs.com/hiyong/p/15376880.html)
-
-----参考
-
 
 
 # 准备条件
 
-1、github账号
+1**、`github`账号**
 使用[github](https://github.com/)对文档进行版本管理
 
-2、注册Read the Docs账号
+2**、注册`Read the Docs`账号**
 官网地址：https://readthedocs.org/
 
-3、安装Python
+3**、安装Python**
 [Sphinx](https://www.sphinx.org.cn/)是一个python工具，用于生成文档，所以需要安装Python环境。
 
 # 开始装了
@@ -161,7 +157,7 @@ html_theme = 'press'  # press 主题
 
 
 
-
+![image-20220514150556939](C:\Users\mild\Documents\my_md_files\jobHunting\搭建在线个人文档\images\image-20220514150556939.png)
 
 ## 5. 配置markdown
 
@@ -202,4 +198,77 @@ extensions = [
 ]
 ```
 
-在`source`目录下创建一个`markdown`文件，将`markdown`文件名添加到`source/index.rst` 中
+4.   **提交上传**
+
+`.gitignore`文件添加`docs/build/`目录，不需要上传这个目录。
+
+```bash
+git add .
+git commit -m "提交说明"
+git push -u origin master
+```
+
+
+
+## 6.配置文档内容
+
+要配置文档内容，需要修改`index.rst`文件，它的内容如下
+
+```
+.. cpp_dictionary documentation master file, created by
+   sphinx-quickstart on Wed Jul  7 09:42:42 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+​
+Welcome to cpp_dictionary's documentation!
+==========================================
+​
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+​
+​
+​
+Indices and tables
+==================
+​
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+​
+```
+
+语法:
+
+-   两个点`..`+空格+后面的文本，代表注释
+-   等号线`====`+上一行的文本，代表一级标题
+-   `.. toctree::`声明的一个树状结构
+-   `:maxdepth: 2` 表示页面的级数最多显示两级
+-   `:caption: Contents:` 用于指定标题文本
+-   最下面的3行是索引和搜索链接
+
+# 关联Read the Docs
+
+关联Read the Docs，使其可以在线访问文档。
+
+浏览器访问 https://readthedocs.org/， 点击【我的项目】-> 【Import a Project】：
+
+注意这里：
+
+We're only showing public repositories. For private projects and other features, please use [Read the Docs for Business](https://readthedocs.com/).
+
+所以最好是Public 仓库，如果是私有仓库，那得￥￥￥￥￥![image-20220514154350091](C:\Users\mild\Documents\my_md_files\jobHunting\搭建在线个人文档\images\image-20220514154350091.png)
+
+点击下一页
+
+![image-20220514154455019](C:\Users\mild\Documents\my_md_files\jobHunting\搭建在线个人文档\images\image-20220514154455019.png)
+
+之后点击完成， 最后构建版本
+
+![image-20220514154616136](C:\Users\mild\Documents\my_md_files\jobHunting\搭建在线个人文档\images\image-20220514154616136.png)
+
+参考文档：
+
+1.   [**搭建在线电子书：Sphinx + Github + ReadTheDocs** ](https://www.cnblogs.com/hiyong/p/15376880.html)
+
+2.   **[配置文档内容](https://zhuanlan.zhihu.com/p/388640347)**
